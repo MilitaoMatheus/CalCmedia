@@ -6,10 +6,10 @@ botao.addEventListener('click', function(){
     let formulario = document.querySelector('#form-aluno')
     let dadosAluno = validaForm(formulario)
 	console.log(dadosAluno.jNome)
-	console.log(dadosAluno.jN1)
-	console.log(dadosAluno.jN2)
-	console.log(dadosAluno.jN3)
-	console.log(dadosAluno.jMediaFinal)
+	console.log(dadosAluno.jN1.toFixed(1))
+	console.log(dadosAluno.jN2.toFixed(1))
+	console.log(dadosAluno.jN3.toFixed(1))
+	console.log(dadosAluno.jMediaFinal.toFixed(1))
 	console.log(dadosAluno.jSituacao)
 	
 })
@@ -58,12 +58,14 @@ function validaForm(meuForm){
     } else {
 		let jsonAluno = {
 			jNome: meuForm.querySelector('#nome').value,
-			jN1: meuForm.querySelector('#n1').value,
-			jN2: meuForm.querySelector('#n2').value,
-			jN3: meuForm.querySelector('#n3').value,
+			jN1: parseFloat(meuForm.querySelector('#n1').value.replace(",", ".")),
+			jN2: parseFloat(meuForm.querySelector('#n2').value.replace(",", ".")),
+			jN3: parseFloat(meuForm.querySelector('#n3').value.replace(",", ".")),
+			
 			jMediaFinal:calcularMedia(meuForm.querySelector('#n1').value.replace(",", "."),
 						meuForm.querySelector('#n2').value.replace(",", "."),
 						meuForm.querySelector('#n3').value.replace(",", ".")),
+						
 			jSituacao: mostrarSituacao(calcularMedia(meuForm.querySelector('#n1').value.replace(",", "."),
 													meuForm.querySelector('#n2').value.replace(",", "."),
 													meuForm.querySelector('#n3').value.replace(",", ".")))[0]
