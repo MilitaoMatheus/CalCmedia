@@ -1,0 +1,94 @@
+body {
+  margin: 0px;
+  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+}
+
+main {
+  margin: auto;
+  width: 70%;
+}
+
+header {
+  background-color: #c0c0c0;
+  color: white;
+  padding: 0px 0px 10px 0px;
+}
+
+h1 {
+  font-size: 50px;
+  font-weight: bold;
+  margin: auto;
+  width: 70%;
+  padding: 10px;
+}
+
+h2 {
+  font-size: 18px;
+  margin-top: 20px;
+  font-weight: bold;
+  color: black;
+}
+
+h4 {
+  font-size: 20px;
+  width: 70%;
+  margin: auto;
+}
+
+.formulario{
+  border: 1px solid #c0c0c0;
+  border-radius: 5px;
+	padding: 10px;
+  background-color: #c0c0c0;
+}
+
+table{
+	width: 100%;
+	margin-bottom : .5em;
+  table-layout: fixed;
+}
+
+td, th {
+	padding: .7em;
+	margin: 0;
+	border: 1px solid #ccc;
+	text-align: center;
+    font-size: 14px;
+}
+
+th{
+	font-weight: bold;
+	background-color: #c0c0c0;
+}
+
+input {
+  border-radius: 5px;
+  height: 25px;
+}
+
+button {
+  background-color: #ffffff; /* white */
+    border: none;
+    border-radius: 5px;
+    color: black;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    box-shadow: 2px 2px gray;
+}
+
+.reprovado{
+	color:#DE0B0E;
+	font-weight:bold;
+	background-color: #fff;
+}
+
+.aprovado{
+	color: blue;
+	font-weight:bold;
+	background-color: #fff;
+}
+
+
