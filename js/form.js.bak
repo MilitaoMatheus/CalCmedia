@@ -29,6 +29,7 @@ botao.addEventListener('click', function(){
 	tdN3.textContent = dadosAluno.jN3.toFixed(1)
 	tdMediaFinal.textContent = dadosAluno.jMediaFinal.toFixed(1)
 	tdSituacao.textContent = dadosAluno.jSituacao
+	tdSituacao.classList.add(mostrarSituacao(dadosAluno.jMediaFinal))[1]
 	
 	linha.appendChild(tdNome)
 	linha.appendChild(tdN1)
